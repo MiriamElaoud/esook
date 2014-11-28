@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+	<ui:insert name="loginHeader">
+		<div class="modal fade" id="shoppingcart" tabindex="-1" role="dialog"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Shopping Cart</h4>
+					</div>
+					<div class="modal-body">
+
+						<!-- Items table -->
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Quantity</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="single-item.html">HTC One</a></td>
+									<td>2</td>
+									<td>$250</td>
+								</tr>
+								<tr>
+									<td><a href="single-item.html">Apple iPhone</a></td>
+									<td>1</td>
+									<td>$502</td>
+								</tr>
+								<tr>
+									<td><a href="single-item.html">Galaxy Note</a></td>
+									<td>4</td>
+									<td>$1303</td>
+								</tr>
+								<tr>
+									<th></th>
+									<th>Total</th>
+									<th>$2405</th>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Continue
+							Shopping</button>
+						<button type="button" class="btn btn-info">Checkout</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-2">
+						<!-- Logo -->
+						<div class="logo">
+							<h1>
+								<a href="index.html">E-Sook</a>
+							</h1>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-5">
+						<!-- Navigation menu -->
+						<div class="navi">
+							<div id="ddtopmenubar" class="mattblackmenu">
+								<ul>
+									<li><a href="#" rel="ddsubmenu1">Home</a>
+										<ul id="ddsubmenu1" class="ddsubmenustyle">
+											<li><a href="index.html">Revolution Slider</a></li>
+											<li><a href="index-alt.html">Bootstrap Slider</a></li>
+										</ul></li>
+									<li><a href="#" rel="ddsubmenu1">Account</a>
+										<ul id="ddsubmenu1" class="ddsubmenustyle">
+											<li><a href="account.html">My Account</a></li>
+											<li><a href="viewcart.html">View Cart</a></li>
+											<li><a href="checkout.html">Checkout</a></li>
+											<li><a href="wishlist.html">Wish List</a></li>
+											<li><a href="orderhistory.html">Order History</a></li>
+											<li><a href="editprofile.html">Edit Profile</a></li>
+											<li><a href="confirmation.html">Confirmation</a></li>
+										</ul></li>
+									<li><a href="#" rel="ddsubmenu1">Pages</a>
+										<ul id="ddsubmenu1" class="ddsubmenustyle">
+											<li><a href="404.html">404</a></li>
+											<li><a href="faq.html">FAQ</a></li>
+											<li><a href="blog.html">Blog</a></li>
+											<li><a href="careers.html">Careers</a></li>
+											<li><a href="comingsoon.html">Coming Soon</a></li>
+											<li><a href="support.html">Support</a></li>
+											<li><a href="aboutus.html">About</a></li>
+										</ul></li>
+									<li><a href="#" rel="ddsubmenu1">Computers</a>
+										<ul id="ddsubmenu1" class="ddsubmenustyle">
+											<li><a href="items.html">Desktop</a></li>
+											<li><a href="items.html">Laptop</a></li>
+											<li><a href="items.html">NetBook</a></li>
+											<li><a href="items.html">All-In-One PC</a></li>
+											<li><a href="items.html">Alienware</a></li>
+										</ul></li>
+									<li><a href="contactus.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- Dropdown NavBar -->
+						<div class="navis"></div>
+					</div>
+					<div class="col-md-4 col-sm-5">
+						<div class="kart-links">
+							<!-- 					<h:commandLink value="Login" action="login?faces-redirect=true" /> -->
+							<!-- 					<h:commandLink value="Signup" action="register?faces-redirect=true" /> -->
+							<a href="login.html">Login</a> <a href="register.html">Signup</a>
+							<a data-toggle="modal" href="#shoppingcart"><i
+								class="fa fa-shopping-cart"></i> 3 Items - $300</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Logo & Navigation ends -->
+		<div class="clearfix"></div>
+	</ui:insert>
+	<ui:insert name="authentifiéHeader">
+		<div class="modal fade" id="shoppingcart" tabindex="-1" role="dialog"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"
+							aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Shopping Cart</h4>
+					</div>
+					<div class="modal-body">
+
+						<!-- Items table -->
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Quantity</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="single-item.html">HTC One</a></td>
+									<td>2</td>
+									<td>$250</td>
+								</tr>
+								<tr>
+									<td><a href="single-item.html">Apple iPhone</a></td>
+									<td>1</td>
+									<td>$502</td>
+								</tr>
+								<tr>
+									<td><a href="single-item.html">Galaxy Note</a></td>
+									<td>4</td>
+									<td>$1303</td>
+								</tr>
+								<tr>
+									<th></th>
+									<th>Total</th>
+									<th>$2405</th>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Continue
+							Shopping</button>
+						<button type="button" class="btn btn-info">Checkout</button>
+					</div>
+				</div>
+				<!-- /.modal-content -->
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.modal -->
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-2">
+						<!-- Logo -->
+						<div class="logo">
+							<h1>
+								<a href="index.html">E-Sook</a>
+							</h1>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-5">
+						<!-- Navigation menu -->
+						<div class="navi">
+							<div id="ddtopmenubar" class="mattblackmenu">
+								<ul>
+									<li><a href="#" rel="ddsubmenu1">Home</a>
+										<ul id="ddsubmenu1" class="ddsubmenustyle">
+											<li><a href="index.html">Revolution Slider</a></li>
+											<li><a href="index-alt.html">Bootstrap Slider</a></li>
+										</ul></li>
+									<li><a href="#" rel="ddsubmenu1">Account</a>
+										<ul id="ddsubmenu1" class="ddsubmenustyle">
+											<li><a href="account.html">My Account</a></li>
+											<li><a href="viewcart.html">View Cart</a></li>
+											<li><a href="checkout.html">Checkout</a></li>
+											<li><a href="wishlist.html">Wish List</a></li>
+											<li><a href="orderhistory.html">Order History</a></li>
+											<li><a href="editprofile.html">Edit Profile</a></li>
+											<li><a href="confirmation.html">Confirmation</a></li>
+										</ul></li>
+									<li><a href="#" rel="ddsubmenu1">Pages</a>
+										<ul id="ddsubmenu1" class="ddsubmenustyle">
+											<li><a href="404.html">404</a></li>
+											<li><a href="faq.html">FAQ</a></li>
+											<li><a href="blog.html">Blog</a></li>
+											<li><a href="careers.html">Careers</a></li>
+											<li><a href="comingsoon.html">Coming Soon</a></li>
+											<li><a href="support.html">Support</a></li>
+											<li><a href="aboutus.html">About</a></li>
+										</ul></li>
+									<li><a href="#" rel="ddsubmenu1">Computers</a>
+										<ul id="ddsubmenu1" class="ddsubmenustyle">
+											<li><a href="items.html">Desktop</a></li>
+											<li><a href="items.html">Laptop</a></li>
+											<li><a href="items.html">NetBook</a></li>
+											<li><a href="items.html">All-In-One PC</a></li>
+											<li><a href="items.html">Alienware</a></li>
+										</ul></li>
+									<li><a href="contactus.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- Dropdown NavBar -->
+						<div class="navis"></div>
+					</div>
+					<div class="col-md-4 col-sm-5">
+						<div class="kart-links">
+							<a href="login.html">LogOut</a>
+							<a data-toggle="modal" href="#shoppingcart"><i
+								class="fa fa-shopping-cart"></i> 3 Items - $300</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+	</ui:insert>
+
+
+</ui:composition>

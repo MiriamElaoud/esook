@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+<!-- 	<persistence-unit name="sqlserverPI"> -->
+	<persistence-unit name="pidev">
+
+<!-- 		<jta-data-source>java:jboss/datasources/sqlserverPI</jta-data-source> -->
+		<jta-data-source>java:/jndi_projet</jta-data-source>
+		<class>tn.edu.esprit.Pidev.Entity.Account</class>
+		<class>tn.edu.esprit.Pidev.Entity.Admin</class>
+		<class>tn.edu.esprit.Pidev.Entity.Category</class>
+		<class>tn.edu.esprit.Pidev.Entity.ClaimPk</class>
+		<class>tn.edu.esprit.Pidev.Entity.Note</class>
+		<class>tn.edu.esprit.Pidev.Entity.NotePk</class>
+		<class>tn.edu.esprit.Pidev.Entity.OrderlinePk</class>
+		<class>tn.edu.esprit.Pidev.Entity.Orders</class>
+		<class>tn.edu.esprit.Pidev.Entity.OrdersLine</class>
+		<class>tn.edu.esprit.Pidev.Entity.Poduit</class>
+		<class>tn.edu.esprit.Pidev.Entity.Promotion</class>
+		<class>tn.edu.esprit.Pidev.Entity.Tansaction</class>
+		<class>tn.edu.esprit.Pidev.Entity.User</class>
+		<class>tn.edu.esprit.Pidev.Entity.claim</class>
+		<class>tn.edu.esprit.Pidev.Entity.photos</class>
+
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+		</properties>
+	</persistence-unit>
+</persistence>

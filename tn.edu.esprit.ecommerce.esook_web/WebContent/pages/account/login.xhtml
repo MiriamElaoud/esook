@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="/WEB-INF/template/template.xhtml"
+	xmlns:p="http://primefaces.org/ui"> 
+	<ui:define name="pageTitle">Gestion Employee</ui:define>
+	
+	<ui:define name="pageTitle">Login Please :)</ui:define>
+	
+	<ui:define name="header">
+	<ui:decorate template="/WEB-INF/template/header.xhtml">
+		<ui:define name="authentifiéHeader"></ui:define>
+	</ui:decorate>
+	</ui:define>
+
+	<ui:define name="content">
+		<div class="blocky">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="reg-login-info">
+							<h2>
+								Login to Access Amazing Benefits <span class="color">!!!</span>
+							</h2>
+							<h:graphicImage library="img" name="back1.jpg"
+								styleClass="img-responsive img-thumbnail" />
+							<p>Duis leo risus, vehicula luctus nunc. Quiue rhoncus, a
+								sodales enim arcu quis turpis. Duis leo risus, condimentum ut
+								posuere ac, vehicula luctus nunc. Quisque rhoncus, a sodales
+								enim arcu quis turpis.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="register-login">
+							<div class="cool-block">
+								<div class="cool-block-bor">
+
+									<h3>Login</h3>
+									<h:form styleClass="form-horizontal" id="formlogin">
+										<div class="form-group">
+											<h:outputLabel value="login:"
+												styleClass="col-lg-2 control-label" id="loginlabel" />
+											<div class="col-lg-10">
+												<p:inputText value="#{authentication.login}"
+													styleClass="form-control" id="logininput" />
+											</div>
+										</div>
+										<div class="form-group">
+											<h:outputLabel value="password:"
+												styleClass="col-lg-2 control-label" id="passwordlabel" />
+											<div class="col-lg-10">
+												<p:password value="#{authentication.passeword}"
+													styleClass="form-control" id="passwordinput" />
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-lg-offset-2 col-lg-10">
+												<div class="checkbox">
+													<label> <h:selectBooleanCheckbox
+															value="#{authentication.keepMeSignedIn}" id="fieldcheck" />
+														Remember me
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-lg-offset-2 col-lg-10">
+												<h:commandButton value="Sign In"
+													action="#{authentication.doLogin()}"
+													styleClass="btn btn-info" id="dologinregister" />
+												<h:commandButton value="reset"
+													action="#{authentication.doReset()}"
+													styleClass="btn btn-default" id="doreset" />
+											</div>
+										</div>
+									</h:form>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sep-bor"></div>
+			</div>
+		</div>
+
+
+	</ui:define>
+</ui:composition>
